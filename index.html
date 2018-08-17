@@ -65,5 +65,51 @@
         <button id="btnSlideUp">Slide Images Up</button>
     </div>
 </div>
+
+<script> $(".red").css("color", "red");</script>
+
+
+
+<script> $("#myElement").click(function () {
+    $(this).css('color', '#0954cc');
+});</script>
+
+<!--I disabled the alert becuase it looks funky but it works.-->
+
+<!--alert("myElement was clicked!")-->
+<!---->
+
+<script>$("#myElement>div").css("color","white");
+$("#myElement>div").css("backgroundColor","green");</script>
+
+
+
+
+<script>$("#myElement>div:last").css("backgroundColor", "orange");
+$("#myElement>div:last").css("color", "pink")</script>
+
+
+<script>$("#gallery").fadeToggle(4000); </script>
+
+<!--These buttons are fully functionsl, the first is a fade effect, the second is fade in effect, the third is a slide down and the fourth is a slide up effect.-->
+<script> $("#btnFade").click(function(){
+    $("#gallery").fadeToggle();
+});</script>
+
+
+<script> $("#btnUnfade").click(function(){
+    $("#gallery").fadeIn();
+});</script>
+
+
+<script> $("#btnSlideDn").click(function(){
+    $("#gallery").slideDown();
+});</script>
+
+<script> $("#btnSlideUp").click(function(){
+    $("#gallery").slideUp();
+});</script>
+
+
 </body>
 </html>
